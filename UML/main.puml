@@ -1,0 +1,45 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class mainTest
+{
+
+
+}
+
+
+Class UserInterface
+{
+    public void newListButton()
+
+    public void deleteListButton()
+
+    public void editTitleButton(String title) //write over
+
+    public newItemButton()
+
+    public deleteItemButton()
+
+    public editDescriptionButton(String description) //write over
+
+    public editDateButton()
+
+    public markDoneButton()
+
+    public ShowAllButton()
+
+    public ShowIncompleteButton()
+
+    public ShowCompletedButton()
+
+    public SaveButton()
+
+    public SaveAllButton()
+
+    public LoadButton(String title) //prompt for title
+
+    public LoadAllButton()
+}
+
+
+@enduml
