@@ -4,9 +4,10 @@
 class ToDoManager
 {
     main()
-
-
+    start()
 }
+
+javafx.Application <|-- ToDoManager
 
 class ToDoManagerController
 {
@@ -26,6 +27,8 @@ class ToDoManagerController
     public LoadButton(String title) //prompt for title
     public LoadAllButton()
 }
+
+ToDoManager - ToDoManagerController
 
 class ToDoList
 {
