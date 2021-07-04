@@ -26,20 +26,80 @@ class ToDoManagerController
     public SaveAllButton()
     public LoadButton(String title) //prompt for title
     public LoadAllButton()
+
+
+
 }
 
 ToDoManager - ToDoManagerController
+ToDoManagerController <-- ToDoList
 
 class ToDoList
 {
+    - String: Title
+    - Array[]: ToDoItem
+    - int: CurrentItem
 
+    + String Date
+    + String Desc
+
+    Constructor ToDoList()
+
+    String getTitle() return String
+    void setTitle(String)
+
+    private dateChecker(String Date) return boolean
+    public newItem(String Date, String Desc)
+
+    public editItem(int 0)
+
+    public getItem(int 0)
 }
 
 class ToDoItem
 {
+    //int item number
+
+    - boolean: Done
+    - String: description
+    - String: Date
+
+    Constructor ToDoItem()
+
+    public String getDate() return String
+    public void setDate(String Date)
+
+    public String getDesc() return String
+    public void setDesc(String Desc)
+
+    public String getDone() return boolean
+    public void setDone()
+}
+
+ToDoList <-- ToDoItem
+
+class FileManager
+{
+
+    public ListToFile()
+
+    public FileToList()
+
+    public LoadMasterSave()
 
 }
 
+class MasterSave
+{
+    LinkList: TitleList
 
+    getToDoList()
+    getAllToDoList()
+
+    addToDoList()
+}
+
+FileManager - MasterSave
+javafx.Application <-- FileManager
 
 @enduml

@@ -18,7 +18,14 @@
  public class ToDoManager extends Application {
 
      public static void main(String[] args) {
+
+         //make new List<ToDoList
+         //make new List<String> Master
+         // Master = call LoadMasterSave
+
          launch(args);
+
+         //call SaveMasterSave
      }
 
      @Override
@@ -36,6 +43,5 @@
          } catch (IOException e) {
              e.printStackTrace();
          }
-
      }
  }
