@@ -11,23 +11,27 @@ javafx.Application <|-- ToDoManager
 
 class ToDoManagerController
 {
-    public newListButton()
-    public deleteListButton()
-    public editTitleButton(String title) //write over
-    public newItemButton()
-    public deleteItemButton()
-    public editDescriptionButton(String description) //write over
-    public editDateButton()
-    public markDoneButton()
-    public ShowAllButton()
-    public ShowIncompleteButton()
-    public ShowCompletedButton()
-    public SaveButton()
-    public SaveAllButton()
-    public LoadButton(String title) //prompt for title
-    public LoadAllButton()
+    public newListClicked()
+    public deleteListClicked()
+    public editTitleClicked(String title) //write over
+    public newItemClicked()
+    public deleteItemClicked()
+    public editDescriptionClicked(String description) //write over
+    public editDateClicked()
+    public markDoneClicked()
+    public ShowAllClicked()
+    public ShowIncompleteClicked()
+    public ShowCompletedClicked()
+    public SaveClicked()
+    public SaveAllClicked()
+    public LoadClicked(String title) //prompt for title
+    public LoadAllClicked()
 
+    public PreviousListClicked()
+    public PreviousItemClicked()
 
+    public NextListClicked()
+    public NextItemClicked()
 
 }
 
@@ -86,6 +90,8 @@ class FileManager
     public FileToList()
 
     public LoadMasterSave()
+
+    public SaveMasterSave()
 
 }
 
