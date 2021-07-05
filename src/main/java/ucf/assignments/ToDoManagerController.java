@@ -143,4 +143,9 @@ public class ToDoManagerController {
 
         //call newItem method
     }
+
+    public void SortItemsClicked(ActionEvent actionEvent) {
+
+        //call SortItemByDate
+    }
 }

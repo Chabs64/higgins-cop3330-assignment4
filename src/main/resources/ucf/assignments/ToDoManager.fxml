@@ -39,6 +39,7 @@
       <MenuButton layoutX="422.0" layoutY="68.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="191.0" text="ToDo List Edit">
         <items>
           <MenuItem fx:id="EditTitle" mnemonicParsing="false" onAction="#EditTitleClicked" text="Edit Title" />
+            <MenuItem fx:id="SortItems" mnemonicParsing="false" onAction="#SortItemsClicked" text="Sort Items" />
           <MenuItem fx:id="DeleteToDoList" mnemonicParsing="false" onAction="#DeleteToDoListClicked" text="Delete ToDoList" />
         </items>
       </MenuButton>

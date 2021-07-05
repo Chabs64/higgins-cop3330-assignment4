@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class ToDoList {
 
     private String Title;
-    private ArrayList<ToDoList> ToDoItem;
+    private ArrayList<ToDoItem> ToDoItem;
     private int CurrentItem;
 
     public String Date;
@@ -82,5 +82,13 @@ public class ToDoList {
         //return ItemInfo;
         return "";
     }
+
+    public void SortItemsByDate()
+    {
+
+        //call collection.sort() on the ArrayList of Items
+        // .compareTo the year, then compareTo the month, then compareTo the day.
+    }
+
 
 }
