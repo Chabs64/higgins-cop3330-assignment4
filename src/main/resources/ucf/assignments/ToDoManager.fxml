@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
 
 <!--
   ~ /*
@@ -13,9 +14,47 @@
   ~  */
   -->
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="ucf.assignments.ToDoManagerController"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoManagerController">
+   <children>
+      <MenuButton fx:id="ItemMenu" layoutX="422.0" layoutY="101.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="191.0" text="Item Edit">
+        <items>
+          <MenuItem fx:id="EditDate" mnemonicParsing="false" text="Edit Date" />
+          <MenuItem fx:id="EditDesc" mnemonicParsing="false" text="Edit Descirption" />
+            <MenuItem fx:id="MarkDone" mnemonicParsing="false" text="Mark Done" />
+            <MenuItem fx:id="DeleteItem" mnemonicParsing="false" text="Delete Item" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="SaveMenu" layoutX="422.0" layoutY="2.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="191.0" text="Save">
+        <items>
+          <MenuItem fx:id="Save" mnemonicParsing="false" text="Save" />
+          <MenuItem fx:id="SaveAll" mnemonicParsing="false" text="Save All" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="LoadMenu" layoutX="422.0" layoutY="35.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="191.0" text="Load">
+        <items>
+          <MenuItem fx:id="Load" mnemonicParsing="false" text="Load" />
+          <MenuItem fx:id="LoadAll" mnemonicParsing="false" text="Load All" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="422.0" layoutY="68.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="191.0" text="ToDo List Edit">
+        <items>
+          <MenuItem fx:id="EditTitle" mnemonicParsing="false" text="Edit Title" />
+          <MenuItem fx:id="DeleteToDoList" mnemonicParsing="false" text="Delete ToDoList" />
+        </items>
+      </MenuButton>
+      <TextArea fx:id="DisplayList" editable="false" layoutY="68.0" prefHeight="527.0" prefWidth="425.0" promptText="Display ToDoList" />
+      <TextField fx:id="UserInput" layoutY="653.0" prefHeight="63.0" prefWidth="425.0" promptText="Enter Answer Here" />
+      <TextArea fx:id="UserPrompt" editable="false" layoutY="594.0" prefHeight="63.0" prefWidth="425.0" promptText="Read Prompt" />
+      <TextArea fx:id="DisplayTitle" editable="false" layoutY="-3.0" prefHeight="71.0" prefWidth="425.0" promptText="Display Title" />
+      <Button fx:id="NextItem" layoutX="424.0" layoutY="594.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="98.0" text="Next Item" />
+      <Button fx:id="NextList" layoutX="424.0" layoutY="653.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="98.0" text="Next List" />
+      <Button fx:id="PreviousList" layoutX="523.0" layoutY="653.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="91.0" text="Previous List" />
+      <Button fx:id="PreviousItem" layoutX="523.0" layoutY="594.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="91.0" text="Previous Item" />
+      <Button fx:id="NewToDoList" layoutX="425.0" layoutY="164.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="94.0" text="New ToDo List" />
+      <Button fx:id="ShowCompleted" layoutX="422.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="191.0" text="Show Completed Items" />
+      <Button fx:id="ShowAll" layoutX="422.0" layoutY="299.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="191.0" text="Show All Items" />
+      <Button fx:id="ShowIncomplete" layoutX="422.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="191.0" text="Show Incomplete Items" />
+      <Button fx:id="NewItem" layoutX="518.0" layoutY="164.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="94.0" text="New Item" />
+   </children>
+</Pane>
