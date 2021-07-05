@@ -25,12 +25,13 @@ public class ToDoList {
 
     public String getTitle(){ return Title;}
     public void setTitle(String title){
+
         //Title = title;
     };
 
     private boolean dateChecker(String Date) {
 
-        //if Date match format MM-DD-YEAR
+        //if Date match format MM-DD-YEAR //use .matchs
         //return ture;
 
         return false;
@@ -61,7 +62,7 @@ public class ToDoList {
         //call set date method
     }
 
-    public void editItemDesc(int listNumber, String Desc)
+    public void editItemDesc(String Desc)
     {
 
         //go to item with listNumber
@@ -69,7 +70,7 @@ public class ToDoList {
         //call set Desc method
     }
 
-    public String getItem(int listNumber)
+    public String getItem()
     {
         String ItemInfo;
 
