@@ -18,7 +18,6 @@ public class MasterSave {
     //List<String> masterSave = new List;
 
 
-    /*
     public Boolean getToDoList(String key)
     {
         //check if you have any saved if not redirect to new toDoList
@@ -26,13 +25,14 @@ public class MasterSave {
         //if they don't, prompt for another file title
 
         //return true
+        return true;
     }
 
     public List<String> getAllToDoList()
     {
 
         //return the master save list
-
+        return null;
     }
 
 
@@ -40,6 +40,5 @@ public class MasterSave {
     {
         //add name of saved ToDoList to master save
     }
-     */
 
 }
